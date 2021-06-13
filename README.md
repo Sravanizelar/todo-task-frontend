@@ -1,11 +1,12 @@
 
 Fallowing are steps need to fallow in frontend in  todo task
+#apt update
 
-#apt update 
+#apt install nginx -y
 
-#apt install nginx 
+#systemctl start nginx
 
-#apt install nodejs
+#systemctl enable nginx
 
 #apt install npm -y
 
@@ -13,32 +14,22 @@ Fallowing are steps need to fallow in frontend in  todo task
 
 #mkdir todo
 
-#cd todo/
+#cd todo
 
 #git clone https://github.com/zelar-soft-todoapp/frontend.git
 
-#ls
+#cd frontend/
 
-#cd frontend
+#npm install --save-dev  --unsafe-perm node-sass
 
-#npm install
+#cd config/
 
-#npm run build
+#vim index.js(given ip address of login and todo)
 
-#vi /etc/nginx/sites-enabled/default Here we changed"root /var/www/html/todo/frontend/dist"
-
-#systemctl restart nginx
-
-#systemctl enable nginx
-
-#vi config/index.js In this page we updated required private ip's"
+#cd ..
 
 #systemctl restart nginx
-
-#systemctl enable nginx
-
+   
 #npm start
-
-Take public ip of the server with 8080 port
 
 ![Screenshot (141)](https://user-images.githubusercontent.com/82637289/116850738-b30e1280-abe0-11eb-93d0-d689caf102f8.png)
